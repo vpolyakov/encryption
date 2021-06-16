@@ -17,8 +17,13 @@ encoded_plaintext = private_key.decrypt(
     padding.OAEP(
         mgf=padding.MGF1(algorithm=hashes.SHA256()),
         algorithm=hashes.SHA256(),
+<<<<<<< HEAD
         label=None,
     ),
+=======
+        label=None
+    )
+>>>>>>> refs/remotes/origin/master
 )
 
 print(encoded_plaintext.decode())
