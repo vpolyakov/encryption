@@ -17,15 +17,9 @@ signature = private_key.sign(
     message,
     padding.PSS(
         mgf=padding.MGF1(hashes.SHA256()),
-<<<<<<< HEAD
         salt_length=padding.PSS.MAX_LENGTH,
     ),
     hashes.SHA256(),
-=======
-        salt_length=padding.PSS.MAX_LENGTH
-    ),
-    hashes.SHA256()
->>>>>>> refs/remotes/origin/master
 )
 
 with open('sign', 'bw') as sign_file:

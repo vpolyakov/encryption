@@ -20,12 +20,8 @@ with open(KEY_FILE_NAME, 'bw') as f:
 public_key = private_key.public_key()
 pub_pem = public_key.public_bytes(
     encoding=serialization.Encoding.PEM,
-<<<<<<< HEAD
     format=serialization.PublicFormat.SubjectPublicKeyInfo,
-=======
-    format=serialization.PublicFormat.SubjectPublicKeyInfo
->>>>>>> refs/remotes/origin/master
- )
+)
 
 with open(KEY_FILE_NAME + '.pub', 'bw') as f:
     f.write(pub_pem)
