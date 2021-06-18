@@ -1,6 +1,6 @@
 from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import padding
 
 with open('rsa_key', 'rb') as key_file:
     content_key_file = key_file.read()
